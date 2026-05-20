@@ -1,7 +1,7 @@
 let dateElement=document.getElementById("dateTime");
 if(dateElement){
     setInterval(()=>{
-        letnow=new Date();
+        let now=new Date();
         dateElement.innerHTML=now.toLocaleString();
     },1000);
 }
