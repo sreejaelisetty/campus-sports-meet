@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sports Events</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>Campus Sports Meet 2026</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="sports.html">Sports Events</a>
+        <a href="feedback.html">Feedback</a>
+    </nav>
+</header>
+<section class="content">
+    <h2>Sports Events</h2>
+    <div class="sports-gallery">
+    <div class="sport-card">
+        <img src="images/sports-event-images/football.jpg" alt="Football">
+        <h3>Football Tournament</h3>
+    </div>
+    <div class="sport-card">
+        <img src="images/sports-event-images/run.jpg" alt="Running">
+        <h3>Running Race</h3>
+    </div>
+    <div class="sport-card">
+        <img src="images/sports-event-images/tennis.jpg" alt="Tennis">
+        <h3>Tennis Match</h3>
+    </div>
+</div>
+    <table>
+        <tr>
+            <th>Event ID</th>
+            <th>Event Name</th>
+            <th>Category</th>
+            <th>Date & Time</th>
+            <th>Venue</th>
+            <th>Fee</th>
+            <th>Status</th>
+        </tr>
+        <tr>
+            <td>E101</td>
+            <td>Football</td>
+            <td>Outdoor</td>
+            <td>10 April 2026 - 9AM</td>
+            <td>Main Ground</td>
+            <td>₹200</td>
+            <td>Open</td>
+        </tr>
+        <tr>
+            <td>E102</td>
+            <td>Cricket</td>
+            <td>Outdoor</td>
+            <td>11 June 2026 - 10AM</td>
+            <td>Cricket Stadium</td>
+            <td>₹250</td>
+            <td>Open</td>
+        </tr>
+        <tr>
+            <td>E103</td>
+            <td>Basketball</td>
+            <td>Indoor</td>
+            <td>12 June 2026 - 11AM</td>
+            <td>Indoor Court</td>
+            <td>₹150</td>
+            <td>Open</td>
+        </tr>
+        <tr>
+            <td>E104</td>
+            <td>Badminton</td>
+            <td>Indoor</td>
+            <td>13 June 2026 - 1PM</td>
+            <td>Sports Hall</td>
+            <td>₹100</td>
+            <td>Closed</td>
+        </tr>
+        <tr>
+            <td>E105</td>
+            <td>Volleyball</td>
+            <td>Outdoor</td>
+            <td>14 June 2026 - 2PM</td>
+            <td>Volley Court</td>
+            <td>₹180</td>
+            <td>Open</td>
+        </tr>
+    </table>
+    <h2>Participation Form</h2>
+    <form id="sportsForm">
+        <input type="text" id="studentName" placeholder="Student Name">
+        <input type="text" id="registerNumber" placeholder="Register Number">
+        <input type="email" id="email" placeholder="Email ID">
+        <input type="text" id="mobile" placeholder="Mobile Number">
+        <input type="text" id="department" placeholder="Department">
+        <select id="year">
+            <option value="">Select Year</option>
+            <option>1st Year</option>
+            <option>2nd Year</option>
+            <option>3rd Year</option>
+            <option>4th Year</option>
+        </select>
+        <select id="event">
+            <option value="">Select Event</option>
+            <option>Football</option>
+            <option>Cricket</option>
+            <option>Basketball</option>
+            <option>Badminton</option>
+            <option>Volleyball</option>
+        </select>
+        <select id="type">
+            <option value="">Participation Type</option>
+            <option>Individual</option>
+            <option>Team</option>
+        </select>
+        <input type="text" id="teamName" placeholder="Team Name">
+        <input type="number" id="members" placeholder="Number of Team Members">
+        <button type="submit">Submit Entry</button>
+    </form>
+    <p id="message"></p>
+    <h3>Total Participants: <span id="count">0</span></h3>
+    <div id="participants"></div>
+</section>
+<footer>
+    <p>Department of Computer Science and Engineering</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

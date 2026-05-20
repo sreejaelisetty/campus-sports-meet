@@ -1,0 +1,11 @@
+{
+    "name": "campus-sports-meet-2026",
+    "version": "1.0.0",
+    "main": "main.js",
+    "scripts": {
+      "start": "electron ."
+    },
+    "devDependencies": {
+      "electron": "^30.0.0"
+    }
+  }
