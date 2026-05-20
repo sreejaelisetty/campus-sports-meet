@@ -67,7 +67,6 @@ if(sportsForm){
     });
 }
 let feedbackForm=document.getElementById("feedbackForm");
-
 let totalRating=0;
 let feedbackCount=0;
 if(feedbackForm){
